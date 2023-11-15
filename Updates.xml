@@ -1,0 +1,79 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>myApp</Name>
+  <DisplayName>EVS Application</DisplayName>
+  <Description>Installing the complete package, including sql communications</Description>
+  <Version>0.0.1</Version>
+  <Default>true</Default>
+  <ReleaseDate>2023-11-14</ReleaseDate>
+  <Script>installscript.js</Script>
+  <UpdateFile OS="Any" CompressedSize="0" UncompressedSize="0"/>
+  <SHA1>9eb452cb1198e41d8b4f883eb278f6b8d9ceca06</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>myApp.componentA</Name>
+  <DisplayName>Component A</DisplayName>
+  <Description>This component does not depend on any other component.</Description>
+  <Version>1.0.0</Version>
+  <ReleaseDate>2014-08-25</ReleaseDate>
+  <SortingPriority>100</SortingPriority>
+  <UpdateFile OS="Any" CompressedSize="309" UncompressedSize="158"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <SHA1>db58cf62412220481018375aad22c1f886c241ec</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>myApp.componentF</Name>
+  <DisplayName>Component F</DisplayName>
+  <Description>This component contains 2 subcomponents.</Description>
+  <Version>1.0.0</Version>
+  <ReleaseDate>2014-08-25</ReleaseDate>
+  <SortingPriority>40</SortingPriority>
+  <UpdateFile OS="Any" CompressedSize="263" UncompressedSize="99"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <SHA1>8741d94cd20b548301a98bb2f328406b0999b65d</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>myApp.componentF.subcomponent1</Name>
+  <DisplayName>Subcomponent 1</DisplayName>
+  <Description>This component contains 2 leaf components.</Description>
+  <Version>1.0.0</Version>
+  <ReleaseDate>2014-08-25</ReleaseDate>
+  <SortingPriority>100</SortingPriority>
+  <UpdateFile OS="Any" CompressedSize="267" UncompressedSize="99"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <SHA1>7a9066332797754be8cfdad03af5015711ab0dce</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>myApp.componentG</Name>
+  <DisplayName>Component G (default, depends on A, dependency added dynamically)</DisplayName>
+  <Description>By default, this component is selected for installation. It depends on component A. Dependency is added from inside component script.</Description>
+  <Default>true</Default>
+  <Version>1.0.0</Version>
+  <ReleaseDate>2014-08-25</ReleaseDate>
+  <Script>installscript.js</Script>
+  <SortingPriority>30</SortingPriority>
+  <UpdateFile OS="Any" CompressedSize="263" UncompressedSize="99"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <SHA1>1aa430f2fb54648289104c08b6fab2ada8479073</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>myApp.licenseagreement</Name>
+  <DisplayName>README (requires license agreement)</DisplayName>
+  <Description>README can only be installed if the user agrees to the licenses.</Description>
+  <ReleaseDate>2014-01-01</ReleaseDate>
+  <Version>1.0.0-1</Version>
+  <Default>true</Default>
+  <UpdateFile OS="Any" CompressedSize="258" UncompressedSize="116"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <Licenses>
+   <License file="cc0.txt" name="Creative Commons (CC0 1.0)"/>
+   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
+  </Licenses>
+  <SHA1>ffa22cd4b92e962587de2c9fbb46af4e2396d052</SHA1>
+ </PackageUpdate>
+ <SHA1>1af3bbe3138503dc53adc8af79f7e362344a06e5</SHA1>
+ <MetadataName>2023-11-15-1537_meta.7z</MetadataName>
+</Updates>
